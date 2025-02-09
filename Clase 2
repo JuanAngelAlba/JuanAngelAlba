@@ -1,0 +1,9 @@
+import random
+z = ""
+carac = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+W = int(input("PON LA LONGITUD DE SU CONTRASEÑA, NO PUEDE SER MENOS DE 0 Y MAS DE 21"))
+for i in range(W):
+    a = random.choices(carac)
+    
+    z += a[0]
+print(z)
